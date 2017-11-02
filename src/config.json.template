@@ -1,0 +1,8 @@
+{
+  "firebase": {
+    "apiKey": "## copy from your Firebase settings ##",
+    "authDomain": "## copy from your Firebase settings ##",
+    "databaseURL": "## copy from your Firebase settings ##",
+    "projectId": "## copy from your Firebase settings ##"
+  }
+}

@@ -1,6 +1,8 @@
 # centresquare
 
-> AFL stats
+Before deploying, you'll need to copy `src/config.json.template` to
+`src/config.json` and edit in your own settings.
+Note: the resulting file is in gitignore.
 
 ## Build Setup
 
