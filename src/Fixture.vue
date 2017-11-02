@@ -1,27 +1,13 @@
 <template>
-  <div>
-    <h1>{{year}} AFL Ladder</h1>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <ladder-header v-for="column in columns" :column="column.column"
-            :title="column.title" :defaultOrder="column.defaultOrder"
-            @sort="sortBy" :key="column.column"/>
-        </tr>
-      </thead>
-      <tbody>
-        <ladder-team v-for="(team, index) in teams" :team="team" :index="index"
-          :year="year" :key="team.key" :selectedTeam="selectedTeam" @selected="selected"/>
-      </tbody>
-    </table>
-  </div>
+  <table class="table table-striped">
+    <tbody>
+      <ladder-team v-for="(team, index) in teams" :team="team" :index="index"
+        :year="year" :key="team.key"/>
+    </tbody>
+  </table>
 </template>
 
 <script>
-import LadderHeader from './LadderHeader.vue';
-import LadderTeam from './LadderTeam.vue';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'lodash';
 export default {
   name: 'Ladder',
@@ -32,7 +18,6 @@ export default {
   },
   data: function(){
     return {
-      selectedTeam: null,
       sortKey: ['points', 'percentage'],
       sortOrder: ['desc', 'desc'],
       reverse: false,
@@ -68,10 +53,6 @@ export default {
         this.sortKey =  [sortKey, 'index'];
         this.sortOrder = [sortOrder, 'asc'];
       }
-    },
-    selected: function(teamCode){
-      this.selectedTeam = teamCode;
-      this.$emit('selected', teamCode);
     }
   }
 }
