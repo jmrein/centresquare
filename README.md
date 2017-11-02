@@ -1,23 +1,15 @@
-# centresquare
+# centresquare - AFL stats
+
+Source code for [Centre Square](https://centre-square.firebaseapp.com/).
+
+# Deployment
 
 Before deploying, you'll need to copy `src/config.json.template` to
 `src/config.json` and edit in your own settings.
 Note: the resulting file is in gitignore.
 
-## Build Setup
+Intended for use with Firebase on the [centresquare-db](https://github.com/jmrein/centresquare-db) database.
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# License
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  
+This work is licensed under a [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
