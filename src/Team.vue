@@ -5,7 +5,7 @@
         <span slot="suffix">in {{year}}</span>
       </team-logo>
     </h1>
-    <table class="table">
+    <table class="table table-condensed">
       <tbody>
         <match v-for="game in fixture" :db="db" :year="year" :game="game"
           :selectedTeam="team" :teams="teams" :venues="venues" :key="game['.value']"/>

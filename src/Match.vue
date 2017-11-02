@@ -1,6 +1,6 @@
 <template>
   <tr :style="resultStyle">
-    <td class="round">{{game.name}}</td>
+    <td>{{game.name}}</td>
     <td>
       <team-logo :code="oppCode" :name="oppName" position="right">
         <span slot="prefix">{{result}}
@@ -70,9 +70,6 @@ export default {
 </script>
 
 <style>
-.round {
-  white-space: nowrap;
-}
 .isUs {
   font-weight: bold;
 }

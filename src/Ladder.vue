@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{year}} AFL Ladder</h1>
-    <table class="table table-striped">
+    <table class="table table-striped table-condensed table-responsive">
       <thead>
         <tr>
           <ladder-header v-for="column in columns" :column="column.column"

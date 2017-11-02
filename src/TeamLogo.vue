@@ -21,8 +21,8 @@ export default {
 <style>
 .logo{
   background-repeat: no-repeat;
-  background-size: 3em 100%;
-  padding-left: 3.5em;
+  background-size: 2em 100%;
+  padding-left: 2.4em;
   width: 100%;
   height: 100%;
 }

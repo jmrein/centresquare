@@ -1,12 +1,16 @@
 <template>
-  <div id="app" class="container">
+  <div id="app" class="container-fluid">
     <select v-model="year">
       <option v-for="y in years">{{y}}</option>
     </select>
-    <div class="content">
-      <ladder :data="ladder" :year="year" @selected="selected"/>
-      <team :db="database" :year="year" :team="team" :teams="teams" :venues="venues"
-       v-if="team" />
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <ladder :data="ladder" :year="year" @selected="selected"/>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <team :db="database" :year="year" :team="team" :teams="teams" :venues="venues"
+         v-if="team" />
+      </div>
     </div>
   </div>
 </template>
